@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TradingView Advanced Chart Widget</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .tradingview-widget-container {
+      height: 100vh;
+      width: 100vw;
+    }
+  </style>
+</head>
+<body>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright">
+    <a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank">
+      <span class="blue-text">Track all markets on TradingView</span>
+    </a>
+  </div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+    "allow_symbol_change": true,
+    "calendar": false,
+    "details": false,
+    "hide_side_toolbar": true,
+    "hide_top_toolbar": false,
+    "hide_legend": false,
+    "hide_volume": false,
+    "hotlist": false,
+    "interval": "D",
+    "locale": "en",
+    "save_image": true,
+    "style": "1",
+    "symbol": "BINGX:BTCUSDT.P",
+    "theme": "light",
+    "timezone": "Etc/UTC",
+    "backgroundColor": "#ffffff",
+    "gridColor": "rgba(46, 46, 46, 0.06)",
+    "watchlist": [
+      "BINGX:1000000BABYDOGEUSDT.P"
+      "BINGX:1000000BABYDOGEUSDT.P",
+"BINGX:1000000bobusdt.p",
+"BINGX:1000000MOGUSDT.P",
+"BINGX:10000SATSUSDT.P",
+"BINGX:10000WHYUSDT.P",
+"BINGX:1000BONKUSDT.P",
+"BINGX:1000CATUSDT.P",
+"BINGX:1000CHEEMSUSDT.P",
+"BINGX:1000PEPEUSDT.P",
+"BINGX:1INCHUSDT.P",
+    ],
+    "withdateranges": true,
+    "compareSymbols": [],
+    "show_popup_button": true,
+    "popup_height": "650",
+    "popup_width": "1000",
+    "studies": [
+      "STD;Bollinger_Bands",
+      "STD;WMA"
+    ],
+    "autosize": true
+  }
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</body>
+</html>
